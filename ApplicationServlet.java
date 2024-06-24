@@ -43,7 +43,7 @@ public class ApplicationServlet extends HttpServlet {
 	    //String agree=request.getParameter("check");
 		try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","intiyaz@123");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","manasa@123");
 	    PreparedStatement ps1=con.prepareStatement("insert into details values(?,?,?,?,?,?,?,?,?)");
 	    ps1.setString(1, fname);
 	    ps1.setString(2,lname);
